@@ -49,7 +49,7 @@ export function App(): React.ReactElement {
 
       {showUpload && (
         <div className="border-b border-[#E3E7EA] bg-[#F5F6F7] px-6 py-3">
-          <UploadPanel title="Load FASTA" />
+          <UploadPanel />
         </div>
       )}
 
@@ -93,7 +93,7 @@ export function App(): React.ReactElement {
           ))}
         </nav>
         <div className="h-44 px-6 py-4 overflow-y-auto">
-          {activeTab === 'statistics' && <StatsPanel title="Statistics" />}
+          {activeTab === 'statistics' && <StatsPanel />}
           {activeTab === 'orfs' && <OrfList title="ORFs" />}
           {activeTab === 'mutations' && <MutationPanel title="Mutations" />}
           {activeTab === 'explain' && <ExplainPanel title="Explain" />}
